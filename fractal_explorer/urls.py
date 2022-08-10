@@ -19,5 +19,5 @@ import home.views
 
 urlpatterns = [
     path("", home.views.index, name="index"),
-    path('admin/', admin.site.urls),
+    path('olympus/', admin.site.urls),
 ]
