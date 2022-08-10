@@ -37,7 +37,7 @@ else:
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # if not IS_HEROKU:                                           # For Heroku
-DEBUG = False  # not IS_HEROKU
+DEBUG = not IS_HEROKU
 
 # Application definition
 
@@ -146,6 +146,9 @@ USE_TZ = True
 
 STATIC_ROOT = BASE_DIR / "staticfiles"      # For Heroku
 STATIC_URL = 'static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 
 # Enable WhiteNoise's GZip compression of static assets.
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"     # For Heroku
