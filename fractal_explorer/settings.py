@@ -36,8 +36,7 @@ else:
     ALLOWED_HOSTS = []
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# if not IS_HEROKU:                                           # For Heroku
-DEBUG = not IS_HEROKU
+DEBUG = not IS_HEROKU        # For Heroku
 
 # Application definition
 
@@ -47,7 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    # 'whitenoise.runserver_nostatic',                    # For Heroku
+    'whitenoise.runserver_nostatic',                    # For Heroku
     'django.contrib.staticfiles',
 
     # Third-party apps
