@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'whitenoise.runserver_nostatic',                    # For Heroku
+    # 'whitenoise.runserver_nostatic',                    # For Heroku
     'django.contrib.staticfiles',
 
     # Third-party apps
