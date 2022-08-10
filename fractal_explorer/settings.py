@@ -50,6 +50,10 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',                    # For Heroku
     'django.contrib.staticfiles',
 
+    # Third-party apps
+    'fontawesomefree',
+
+    # Project apps
     'home',
 ]
 
@@ -69,7 +73,7 @@ ROOT_URLCONF = 'fractal_explorer.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
