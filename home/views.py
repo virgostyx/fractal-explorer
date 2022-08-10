@@ -7,4 +7,4 @@ def index(request):
 
 
 class HomePageView(TemplateView):
-    template_name = "/templates/base.html"
+    template_name = "/home/home.html"
