@@ -10,9 +10,9 @@ from django.urls import path
 # Django apps
 
 #  Current app modules
-from .views import HomePageView
+from .views import HomePageView, index
 
 
 urlpatterns = [
-    path('', HomePageView.as_view(), name='home'),
+    path('', index, name='home'),
 ]
