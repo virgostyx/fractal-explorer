@@ -36,7 +36,7 @@ else:
     ALLOWED_HOSTS = []
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = not IS_HEROKU        # For Heroku
+DEBUG = True  # not IS_HEROKU        # For Heroku
 
 # Application definition
 
