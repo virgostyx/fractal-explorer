@@ -159,7 +159,7 @@ class HerokuDiscoverRunner(DiscoverRunner):                             # For He
 
 # Use HerokuDiscoverRunner on Heroku CI
 if "CI" in os.environ:                                                  # For Heroku
-    TEST_RUNNER = "gettingstarted.settings.HerokuDiscoverRunner"
+    TEST_RUNNER = "fractal_explorer.settings.HerokuDiscoverRunner"      # Attention, carefully update
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
