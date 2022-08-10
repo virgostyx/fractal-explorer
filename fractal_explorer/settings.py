@@ -37,7 +37,7 @@ else:
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # if not IS_HEROKU:                                           # For Heroku
-DEBUG = True  # not IS_HEROKU
+DEBUG = not IS_HEROKU
 
 # Application definition
 
