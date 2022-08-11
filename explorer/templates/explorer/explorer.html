@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css"/>
+<link rel="stylesheet" href="{% static 'explorer/css/explorer.css' %}"/>
+{% endblock css %}
+{% block script %}
+{{ block.super }}
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+<py-env>
+</py-env>
+{% endblock script %}
+{% block content %}
+<div>
+    <b>Output</b>
+    <canvas id="myCanvas" width="1450" height="675"></canvas>
+    <div id="log"></div>
+</div>
+{% endblock content %}
+{% block javascript %}
+<py-script src="{% static 'py/mandelbrot_explorer.py' %}"></py-script>
+{% endblock javascript %}
